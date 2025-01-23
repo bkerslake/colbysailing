@@ -58,6 +58,7 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="active"><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="donate.html" class="nav-link">Donate</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
               </ul>
             </nav>
@@ -95,36 +96,20 @@
                   <th>Position</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td><img src="images/person_1.jpg" alt="John Doe" class="headshot"></td>
-                  <td>2024</td>
-                  <td>John Doe</td>
-                  <td>Boston, MA</td>
-                  <td>Skipper</td>
-                </tr>
-                <tr>
-                  <td><img src="images/person_2.jpg" alt="Jane Smith" class="headshot"></td>
-                  <td>2025</td>
-                  <td>Jane Smith</td>
-                  <td>New York, NY</td>
-                  <td>Crew</td>
-                </tr>
-                <tr>
-                  <td><img src="images/person_3.jpg" alt="Emily Johnson" class="headshot"></td>
-                  <td>2023</td>
-                  <td>Emily Johnson</td>
-                  <td>San Francisco, CA</td>
-                  <td>Skipper</td>
-                </tr>
+              <tbody id="team-roster">
+                <!-- Rows will be populated by JavaScript -->
               </tbody>
             </table>
           </div>
+        </div>
+        
+        <script src="fetchscript.js"></script>
     
           <h2 class="text-center my-4"><strong>Intramural Squad:</strong></h2>
           <div class="table-responsive">
             <table class="table table-bordered table-striped">
               <thead class="thead-dark">
+                
                 <tr>
                   <th>Headshot</th>
                   <th>Class Year</th>

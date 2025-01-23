@@ -3,7 +3,7 @@ body {
   line-height: 1.7;
   color: gray;
   font-weight: 300;
-  background-color: #222831;
+  background-color: #002169;
   font-size: 16px; }
 
 ::-moz-selection {
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5,
     box-shadow: none !important; }
   .btn.btn-primary:hover {
     border-color: #fff;
-    background: transparent;
+    background: #1a1e25;
     color: #fff; }
   .btn.btn-black {
     border-width: 2px;
@@ -704,6 +704,40 @@ h1, h2, h3, h4, h5,
   flex-grow: 1; /* Allow the description to take up remaining space */
 }
 
+.donation-tiers .tier {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.donation-tiers .tier-content {
+  position: relative;
+}
+
+.donation-tiers .tier img {
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.donation-tiers .tier img:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(100%) saturate(749%) hue-rotate(175deg) brightness(93%) contrast(101%);
+}
+
+.donation-tiers .tier p {
+  margin-top: 10px;
+}
+
+.donation-tiers .tier img:hover::after {
+  content: attr(alt);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 255, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .hero {
   background-size: cover;
   background-position: center center;
@@ -711,8 +745,9 @@ h1, h2, h3, h4, h5,
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100vh;
+  height: 75vh;
   min-height: 500px;
+  width: 100%;
 }
 
 .hero.overlay:before {
